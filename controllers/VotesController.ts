@@ -23,4 +23,4 @@ class VotesController {
 
 }
 
-module.exports = new VotesController();
+export default new VotesController;

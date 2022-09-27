@@ -1,6 +1,5 @@
-require('dotenv').config();
-require('./db');
-
+import dotenv from 'dotenv';
+dotenv.config();
 import express, { Express, NextFunction, Request, Response } from 'express';
 import routes from './routes';
 

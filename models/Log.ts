@@ -1,5 +1,5 @@
 import { DataTypes, Model } from 'sequelize';
-const db = require('../db');
+import db from '../db';
 
 export class Log extends Model { }
 

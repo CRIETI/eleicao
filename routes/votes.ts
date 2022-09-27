@@ -1,7 +1,8 @@
-const routerVote = require('express').Router();
-const votesController = require('../controllers/VotesController');
+import express, { } from 'express';
+import VotesController from '../controllers/VotesController';
+const routerVote = express.Router();
 
-routerVote.get('/votes', votesController.index);
-routerVote.post('/vote', votesController.create);
+routerVote.get('/votes', VotesController.index);
+routerVote.post('/vote', VotesController.create);
 
-module.exports = routerVote;
+export default routerVote;

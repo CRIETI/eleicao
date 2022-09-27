@@ -1,9 +1,10 @@
 import cors from 'cors';
-const router = require('express').Router();
-const users = require('./votes');
+import express, { } from 'express';
+import routerVote from './votes';
+const router = express.Router();
 
 router.use(cors());
 
-router.use(users);
+router.use(routerVote);
 
 export default router;
